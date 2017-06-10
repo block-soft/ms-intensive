@@ -1,0 +1,12 @@
+version: '2'
+services:
+  eth:
+    image: turtus/eth
+    container_name: eth
+    ports:
+      - "8545:8545"
+      - "30303:30303"
+    volumes:
+      - ./eth/:/usr/share/eth/
+    environment:
+      LANG: C.UTF-8

@@ -1,0 +1,27 @@
+##Запуск контейнера
+
+Для построения образа основного сервера в консоли набрать (достаточно один раз):
+
+docker build -t turtus/eth .
+
+После для запуска / перезапуска в консоли набрать:
+
+docker-compose stop && docker-compose up -d && docker-compose ps
+
+###Консоль баша
+
+через интерфейс в консоли выполнить
+
+docker exec -i -t eth /bin/bash
+
+поделать чета и можно выйти
+
+bash>> exit;
+
+###Консоль гет
+
+docker exec -i -t eth geth --dev console
+
+###Клиент под Виндой
+
+"C:\Program Files\Ethereum-Wallet\Ethereum Wallet.exe" --rpc http://localhost:8545
