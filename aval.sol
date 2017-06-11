@@ -1,8 +1,10 @@
-contract Owned() {
+pragma solidity ^0.4.7;
+
+contract Owned {
 	address public owner;
 
 	function Owned() {
-		this.owner = msg.sender;
+		owner = msg.sender;
 	}
 
 	modifier onlyOwner {
@@ -10,7 +12,7 @@ contract Owned() {
 			throw;
 		}
 
-		_
+		_;
 	}
 }
 
@@ -24,14 +26,14 @@ contract Mortal is Owned () {
 	}
 }
 
-contract Bank() is Mortal {
+contract Bank is Mortal {
 
 }
 
-contract Client() is Mortal {
+contract Client is Mortal {
 
 }
 
-contract EBRR() is Mortal {
+contract EBRR is Mortal {
 	
 }
