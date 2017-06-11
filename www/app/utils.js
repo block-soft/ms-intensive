@@ -10,9 +10,13 @@ function testWeb3() {
         return false;
     }
     if (typeof web3.eth.accounts[0] === 'undefined') {
-        alert('eth accounts[0] is not ready');
+        console.log('eth accounts[0] is not ready');
+        console.log(web3.eth.accounts);
         return false;
     }
+    console.log(url);
+    console.log(web3.eth.accounts);
+    return false;
     var AntifakeContract = web3.eth.contract(AntifakeContractJson.abi).at(accountAddress);
 
     var defaultAccount = web3.eth.accounts[0];

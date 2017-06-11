@@ -25,3 +25,10 @@ docker exec -i -t eth geth --dev console
 ###Клиент под Виндой
 
 "C:\Program Files\Ethereum-Wallet\Ethereum Wallet.exe" --rpc http://localhost:8545
+
+"C:\Program Files\Ethereum-Wallet\Ethereum Wallet.exe" --rpc http://46.101.224.77:8545
+
+1ac5ee332e1ead428a09ec666b20b899309f9f6b113d73ed73e1e4e425422326
+
+sudo iptables -I INPUT -p tcp -s 0.0.0.0/0 --dport 8545 -j ACCEPT
+
