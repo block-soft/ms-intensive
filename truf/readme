@@ -1,0 +1,28 @@
+#truffle
+
+truffle compile
+
+## внимание! для локальных деплоев
+
+testrpc
+
+визуально смотреть можно через виндовый mist
+
+"C:\Program Files\Ethereum-Wallet\Ethereum Wallet.exe" --rpc http://localhost:8545
+
+@todo testrpc + truffle migrate ok but docker + => not
+
+## использование контрактов
+
+truffle migrate
+
+truffle console
+
+### пример кода для консоли - @todo не деполит пока!
+
+var metaCoin;
+MetaCoin.deployed().then(function(deployed){metaCoin = deployed;});
+var acc1 = web3.eth.accounts[0];
+var acc2 = web3.eth.accounts[1];
+metaCoin.sendCoin(acc2, 100, {from:acc1});
+metaCoin.getBalance.call(web3.eth.accounts[0]);

@@ -1,0 +1,4 @@
+/.idea/*
+.idea/
+/truf/node_modules/*
+/www/node_modules/*
