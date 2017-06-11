@@ -1,8 +1,12 @@
 {
-  "name": "demo",
-  "version": "0.1.0",
-  "private": true,
+  "name": "test",
+  "version": "0.0.1",
+  "description": "test",
+  "main": "app/init.js",
+  "scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
-    "web3": "^0.18.4"
+	"web3": "^0.18.4"
   }
 }
